@@ -1,0 +1,181 @@
+<!-- Aqui iniciamos o código html, e já chamamos o arquivo css para estilizar -->
+<html>
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale = 1, maximum-scale = 1">
+	<!-- Icons -->
+	<link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+	<!-- Bootstrap -->
+	<link href = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel = "stylesheet" integrity = "sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin = "anonymous">
+	<script src = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity = "sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin = "anonymous"></script>
+	<!-- CSS externo -->
+	<link rel = "stylesheet" type = "text/css" href = "css/css_perfil.css" />
+	<!-- JS externo-->
+    <script src = 'js/js_perfil.js' defer></script>
+	<!-- Definimos o título da página -->
+	<title> PERFIL </title>
+</head>
+
+<body>
+	<!-- Criamos a divMenu que dentro dela tem a logo, a barra de bucar, o botão de se cadastrar e o de logar. -->
+	<header id="Cabecalho" name="Cabecalho" class="row">
+		<div id="divLogoP" name="divLogoP" class="col-md-3 ps-3">
+			<a href="menu.html">
+				<img id=logo src="img/logo.png" >
+			</a>
+		</div>
+	
+		<div class="divBuscar col-md-6 col-sm">
+			<input type="search" class="buscar" placeholder="Buscar eventos">
+			<button class = "pesquisa">
+				<i class="fa-solid fa-magnifying-glass"></i>
+			</button>
+		</div>
+	
+		<div class="col d-flex align-items-center justify-content-end adicionais">
+			<button class="col-4 criar" name="criar" onclick="CriarEvento()"> Criar Evento </button>
+	
+			<button class="d-none short-criar criar" name="criar" onclick="CriarEvento()">
+				<i class="fa fa-plus" aria-hidden="true"></i>
+			</button>
+	
+			<button class=" col-5 btn" onclick="mDropDown()">
+				<i class="fa fa-bars"></i>
+			</button>
+			<!-- Definimos quais seriam os elementos presentes no menu DropDown. -->
+			<div id="dropDown" class="dropDown">
+				<a id="b" href = "perfil.html"> PERFIL </a>
+				<a id="c" href = #> FAVORITOS </a>
+				<a id="d" href = "sobreNos.html"> SOBRE NÓS </a>
+				<a id="e" href = "login.html"> ENCERRAR SESSÃO </a>
+			</div>
+		</div>
+	</header>
+
+	<div class="container-fluid col-4 row-1 ms-0">
+		<!-- Upload profile -->
+		<div class="col-xxl-4">
+			<div class="px-4 py-5 rounded">
+				<div class="row-1 g-3">
+					<div class="text-center">
+						<!-- Image upload  -->
+						<div class="avatar position-absolute ms-5 mt-4 rounded-circle">
+							<i class="fa-solid fa-circle-user text-secondary"></i>
+							<input type="file" id="wizard-picture" name="file" hidden="">
+							<label class="editar btn btn-success-soft rounded-circle mb-xxl-1 ms-1" for="customFile"><i class="fa-solid fa-pencil fa-rotate-270"></i></label>
+						</div>
+					</div>
+				</div>
+			</div> 
+		</div>
+
+
+		<!-- <div class="container">
+			<div class="picture-container">
+				<div class="picture">
+					<i class="fa-solid fa-circle-user" id="imgPhoto"></i>
+					<input type="file" id="fImage" name="fImage" accept="image/*">
+				</div>
+			</div>
+		</div> -->
+
+		<!-- Upload profile -->
+		<!-- <div class="col-xxl-4">
+			<div class="px-4 py-5 rounded">
+				<div class="row-1 g-3">
+					<div class="text-center">
+						
+						<div class="avatar position-relative display-2 mb-3 rounded-circle">
+							<i class="fa-solid fa-circle-user text-secondary"></i>
+						</div>
+
+						
+						<input type="file" id="customFile" name="file" hidden="">
+						<label class="editar btn btn-success-soft btn-block rounded-circle" for="customFile"><i class="fa-solid fa-pencil fa-rotate-270"></i></label>
+					</div>
+				</div>
+			</div>
+		</div>  -->
+
+		<!-- button -->
+		<div class="gap-3 d-md-flex justify-content-md-around text-center">
+			<button type="submit" class="botao btn btn-sm mt-5 mb-2 text-center align-items-center">SALVAR EDIÇÕES</button>
+		</div>
+	</div>	
+	
+	<div class = "row ms-5 me-5 mb-5 teste">
+		<div class="row ms-2 me-2 mt-5 mb-5 gx-5">
+			<div class="col-xxl-6 mb-5 mb-xxl-0">
+				<div class="bg-secondary-soft mt-5 px-4 py-5 rounded">
+					<div class="row g-3">
+						<h4 class="mb-4 mt-0"><i class="fa-solid fa-user me-2"></i>INFORMAÇÕES BÁSICAS</h4>
+						
+						<div class="col-md-12">
+							<label class="form-label">Nome</label>
+							<input type="text" class="form-control" placeholder="">
+						</div>
+						
+						<div class="col-md-12">
+							<label class="form-label">Data de nascimento</label>
+							<input class="form-control" type="text" id="date" placeholder="" onfocus="(this.type='date')" onblur="(this.type='text')" required>
+						</div>
+						
+						<div class="col-md-12">
+							<label class="form-label">Estado</label>
+							<select class="form-control" id="sltEstado" required>
+								<option value=""> </option>
+								<option value="AC">Acre</option>
+								<option value="AL">Alagoas</option>
+								<option value="AP">Amapá</option>
+								<option value="AM">Amazonas</option>
+								<option value="BA">Bahia</option>
+								<option value="CE">Ceará</option>
+								<option value="DF">Distrito Federal</option>
+								<option value="ES">Espirito Santo</option>
+								<option value="GO">Goiás</option>
+								<option value="MA">Maranhão</option>
+								<option value="MS">Mato Grosso do Sul</option>
+								<option value="MT">Mato Grosso</option>
+								<option value="MG">Minas Gerais</option>
+								<option value="PA">Pará</option>
+								<option value="PB">Paraíba</option>
+								<option value="PR">Paraná</option>
+								<option value="PE">Pernambuco</option>
+								<option value="PI">Piauí</option>
+								<option value="RJ">Rio de Janeiro</option>
+								<option value="RN">Rio Grande do Norte</option>
+								<option value="RS">Rio Grande do Sul</option>
+								<option value="RO">Rondônia</option>
+								<option value="RR">Roraima</option>
+								<option value="SC">Santa Catarina</option>
+								<option value="SP">São Paulo</option>
+								<option value="SE">Sergipe</option>
+								<option value="TO">Tocantins</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xxl-6 mb-5 mb-xxl-0">
+				<div class="bg-secondary-soft mt-5 px-4 py-5 rounded">
+					<div class="row g-3">
+						<h4 class="my-4 mb-4 mt-0"><i class="fa-solid fa-phone me-2"></i>INFORMAÇÕES DE CONTATO</h4>
+				
+						<div class="col-md-12">
+							<label for="exampleInputPassword2" class="form-label">Telefone</label>
+							<input class="form-control" type="tel" id="telTelefone" placeholder="" pattern="([0-9]{2})[0-9]{5}-[0-9]{4}" maxlength="11" required>
+						</div>
+						
+						<div class="col-md-12">
+							<label for="exampleInputPassword3" class="form-label">E-mail</label>
+							<input class="form-control" type="email" id="emEmail2" placeholder="" required>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

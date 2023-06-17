@@ -1,0 +1,398 @@
+/* importando a fonte Montserrat do Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Julee&family=Montserrat:wght@500&display=swap');
+
+/* Colocando a fonte em toda a tela html*/
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ededed !important;
+}
+
+/* Definindo a estilização do elemento com ID "divMenu"*/
+#Cabecalho {
+    background-color: #bedef2;
+}
+
+/* Definindo a altura e largura da logo"*/
+#logo {
+    width: 350px;
+    position: relative;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+/* Definindo a estilização do elemento com ID "divLogoP"*/
+
+#divLogoP {
+    height: 85px;
+    overflow: visible;
+}
+
+/* Definindo a estilização do elemento com ID "divBuscar"*/
+.divBuscar {
+    position: relative;
+    transform: translate(-0%, - 50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Definindo a estilização do elemento com ID "buscar"*/
+.buscar {
+    background-color: #ededed;
+    height: 15px;
+    padding: 15px;
+    border: 2px solid #b25abf;
+    border-radius: 40px;
+    width: 100%;
+}
+
+.buscar:focus {
+    outline: none !important;
+}
+
+.pesquisa {
+    position: absolute;
+    right: 30px;
+    background-color: transparent;
+    cursor: pointer;
+    height: 20px;
+    border: none;
+    color: #000000;
+}
+
+/* Definindo a estilização do elemento com ID "CriarEvento"*/
+.criar {
+    border: solid 3px;
+    border-color: #770089;
+    border-radius: 40px;
+    background-color: #b25abf;
+    text-align: center;
+    height: 33px;
+    width: 170px;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.short-criar {
+    font-size: 14px;
+    width: 34px;
+}
+
+#logo {
+    z-index: 2
+}
+
+/*mediaquery responsividade do header*/
+@media screen and (max-width: 1238px) {
+    .short-criar {
+        display: block !important;
+    }
+
+    .criar {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 965px) {
+
+    .criar {
+        display: block !important;
+    }
+
+    .short-criar {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 615px) {
+    .criar {
+        display: none !important;
+    }
+
+    .short-criar {
+        display: block !important;
+    }
+}
+
+@media screen and (max-width: 965px) {
+
+    .divBuscar {
+        position: absolute;
+        top: 85px;
+        left: 0px;
+        width: 100%;
+        background: #bedef2;
+        padding: 20px;
+    }
+
+    .short-pesquisa {
+        padding: 0px 15px;
+    }
+}
+/*final mediaquery>*/
+
+.css-selector {
+    background: linear-gradient(22deg, #69d006, #dd8448, #ae17d0);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 3s ease infinite;
+    -moz-animation: AnimationName 3s ease infinite;
+    animation: AnimationName 3s ease infinite;
+}
+
+.btn{
+    width:3%;
+    height: 3%;
+    top: -4.5%;
+    position: relative;
+    left:-1%;
+}
+
+.option{
+    width: 7rem;  
+}
+
+.sidenav{
+    width: fit-content;
+}
+
+.tamanhoLogo{
+    width: 30rem;
+    
+}
+.modal-header{
+    width: 100%;
+    height: 18%;
+}
+.modal-footer {
+    width: 100%;
+    border: none;
+    background-color:#e0e0e0;
+}
+
+#sair:hover {
+    color: rgb(255, 255, 255);
+}
+
+.modal-header{
+    background-color: #bedef2;
+}
+
+.logo{
+  background-color: #bedef2;
+}
+
+li{
+    margin-top: 30%;
+}
+
+li:hover{
+    margin-top: 30%;
+    color:#770089;
+}
+
+.list-group-item{
+    width: 100%;
+    background-color:#e0e0e0;
+}
+
+.overlay {
+    display: none; /* Esconde a camada de sobreposição por padrão */
+    position: fixed; /* Permanece fixo na tela */
+    z-index: 1; /* Define uma ordem de camada acima dos outros elementos */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(212, 212, 212, 0.5); /* Define uma cor de fundo semitransparente */
+    backdrop-filter: blur(5px); /* Aplica o efeito de desfoque */
+  }
+
+.modal-body{
+    background-color:#e0e0e0;
+    font-size:1.5rem;
+  }
+  
+#sair{
+    width: 100%;
+    padding-left: 2%; 
+  }
+
+svg.bi.bi-box-arrow-right{
+    width: 10%;
+}
+
+svg{
+    padding-right:5%;
+}
+
+.modal{
+    width: 25%;
+}
+
+li#sair.list-group-item.d-flex.d-inline-flex{
+    border-left:none;
+    border-bottom:none;
+    border-right :none;
+}
+
+li#sair.list-group-item.d-flex.d-inline-flex:hover{ 
+    color:rgb(255, 255, 255);
+    background-color: rgba(255, 0, 0, 0.658);
+}
+
+.modal-content {
+    animation-name: modal-animacao;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+    transform-origin: left center;
+}   
+    
+@keyframes modal-animacao {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+
+a {
+    color: #000000;
+}
+
+/* Definindo a estilização do elemento com ID "EventosR*/
+.EventosR {
+    font-weight: bold;
+    font-size: 25px;
+    color: #424242;
+    margin-top: 80px;
+}
+
+/* Definindo a estilização do elemento com ID "barraE"*/
+.barraE {
+    margin-top: 20px;
+    background-color: #dccce0;
+    border-radius: 13px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    overflow: auto;
+}
+
+/* Definindo a estilização do elemento com ID "evento"*/
+.evento {
+    width: 150px;
+    height: 100px;
+    border-radius: 9px;
+    margin-left: 35px;
+    border: solid 2px;
+    border-color: #770089;
+    cursor: pointer;
+}
+
+.evento:hover {
+    border: 6px solid #770089;
+    transition-duration: all 0.4s;
+}
+
+/* Definindo a estilização do elemento com ID "MyEventos"*/
+#MyEventos {
+    font-weight: bold;
+    font-size: 50px;
+    color: #770089;
+}
+
+#MyEventos>label {
+    font-size: 34px;
+}
+
+#barraMyE {
+    height: 70%;
+}
+
+/* Definindo a estilização do elemento com ID "barraMyE"*/
+#barraMyE {
+    margin-top: 4px;
+    background-color: #dccce0;
+    border-radius: 13px;
+    display: flex;
+    flex-wrap: wrap; /* Adicionado */
+    justify-content: center;
+    padding: 36px 26px;
+}
+
+.teste{
+    margin-left: 20px;
+}
+.teste > div{
+    min-width: 100px;
+}
+
+.evento1 {
+    width: 150px;
+    height: 100px;
+    border-radius: 9px;
+    /* margin-left: 35px; */
+    border: solid 2px;
+    border-color: #770089;
+    cursor: pointer;
+}
+
+.evento1:hover {
+    border: 6px solid #770089;
+    transition-duration: all 0.4s;
+}
+
+/* Definindo a estilização do elemento com ID "EventosM" */
+#EventosM {
+    font-weight: bold;
+    font-size: 32px;
+    color: #770089;
+}
+
+/* Definindo a estilização do elemento com ID "container" */
+.container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Estlizando a cor de fundo do elemento com id "active "*/
+.active {
+    background-color: #ededed;
+}
+
+.carousel .item {
+    height: 90% !important;
+    width: 90% !important;
+    border-radius: 3px;
+    border: 3px solid #770089 !important; 
+}
+
+.item img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-height: 90%;   
+}
+
+/* Definindo a estilização do html scrollbar*/
+html ::-webkit-scrollbar {
+    height: 14px;
+}
+
+html ::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background: #770089;
+}
+
+html ::-webkit-scrollbar-track {
+    background: #ededed;
+}

@@ -1,0 +1,51 @@
+<!-- Aqui iniciamos o código html, e já chamamos o arquivo css para estilizar -->
+<html>
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale = 1, maximum-scale = 1">
+	<!-- Icons -->
+	<link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+	<!-- Bootstrap -->
+	<link href = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel = "stylesheet" integrity = "sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin = "anonymous">
+	<script src = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity = "sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin = "anonymous"></script>
+	<!-- CSS externo -->
+	<link rel = "stylesheet" type = "text/css" href = "css/css_sobreNos.css" />
+	<!-- Definimos o título da página -->
+	<title> SOBRE NÓS </title>
+</head>
+
+<body>
+	<!-- Criamos a divMenu que dentro dela tem a logo, a barra de bucar, o botão de se cadastrar e o de logar. -->
+	<header id="Cabecalho" name="Cabecalho" class="row">
+		<div id="divLogoP" name="divLogoP" class="col-md-3 ps-3">
+			<a href="menu.html">
+				<img id=logo src="img/logo.png" >
+			</a>
+		</div>
+	
+		<div class="divBuscar col-md-6 col-sm">
+			<input type="search" class="buscar" placeholder="Buscar eventos">
+			<button class = "pesquisa">
+				<i class="fa-solid fa-magnifying-glass"></i>
+			</button>
+		</div>
+	
+		<div class="col d-flex align-items-center justify-content-end adicionais">
+			<button class="col-4 criar" name="criar" onclick="CriarEvento()"> Criar Evento </button>
+	
+			<button class="d-none short-criar criar" name="criar" onclick="CriarEvento()">
+				<i class="fa fa-plus" aria-hidden="true"></i>
+			</button>
+	
+			<button class=" col-5 btn" onclick="mDropDown()">
+				<i class="fa fa-bars"></i>
+			</button>
+			<!-- Definimos quais seriam os elementos presentes no menu DropDown. -->
+			<div id="dropDown" class="dropDown">
+				<a id="b" href = "perfil.html"> PERFIL </a>
+				<a id="c" href = #> FAVORITOS </a>
+				<a id="d" href = "sobreNos.html"> SOBRE NÓS </a>
+				<a id="e" href = "login.html"> ENCERRAR SESSÃO </a>
+			</div>
+		</div>
+	</header>

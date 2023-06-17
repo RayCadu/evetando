@@ -1,0 +1,306 @@
+/* importando a fonte Montserrat do Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Julee&family=Montserrat:wght@500&display=swap');
+
+/* Colocando a fonte em toda a tela html*/
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    background-color: #ededed !important;
+}
+
+/* Definindo a estilização do elemento com ID "divMenu"*/
+#Cabecalho {
+    background-color: #bedef2;
+}
+
+/* Definindo a altura e largura da logo"*/
+#logo {
+    width: 350px;
+    position: relative;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+/* Definindo a estilização do elemento com ID "divLogoP"*/
+
+#divLogoP {
+    height: 85px;
+    overflow: visible;
+}
+
+/* Definindo a estilização do elemento com ID "divBuscar"*/
+.divBuscar {
+    position: relative;
+    transform: translate(-0%, - 50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Definindo a estilização do elemento com ID "buscar"*/
+.buscar {
+    background-color: #ededed;
+    height: 15px;
+    padding: 15px;
+    border: 2px solid #b25abf;
+    border-radius: 40px;
+    width: 100%;
+}
+
+.buscar:focus {
+    outline: none !important;
+}
+
+.pesquisa {
+    position: absolute;
+    right: 30px;
+    background-color: transparent;
+    cursor: pointer;
+    height: 20px;
+    border: none;
+    color: #000000;
+}
+
+/* Definindo a estilização do elemento com ID "CriarEvento"*/
+.criar {
+    border: solid 3px;
+    border-color: #770089;
+    border-radius: 40px;
+    background-color: #b25abf;
+    text-align: center;
+    height: 33px;
+    width: 170px;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.short-criar {
+    font-size: 14px;
+    width: 34px;
+}
+
+#logo {
+    z-index: 2
+}
+
+/*<mediaquery responsividade do header*/
+@media screen and (max-width: 1238px) {
+    .short-criar {
+        display: block !important;
+    }
+
+    .criar {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 965px) {
+
+    .criar {
+        display: block !important;
+    }
+
+    .short-criar {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 615px) {
+    .criar {
+        display: none !important;
+    }
+
+    .short-criar {
+        display: block !important;
+    }
+}
+
+@media screen and (max-width: 965px) {
+
+    .divBuscar {
+        position: absolute;
+        top: 85px;
+        left: 0px;
+        width: 100%;
+        background: #bedef2;
+        padding: 20px;
+    }
+
+    .short-pesquisa {
+        padding: 0px 15px;
+    }
+}
+/*final mediaquery>*/
+
+/* Definindo a estilização do elemento com ID "btn_menuHamburguer"*/
+.btn {
+    background-color: #bedef2;
+    border: none;
+    color: #424242;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+/* Definindo a estilização do elemento com ID "dropDown"*/
+.dropDown {
+    display: none;
+    position: absolute;
+    background-color: #b058bd;
+    min-width: 160px;
+    z-index: 3;
+    top: 85px;
+    height: 100%;
+    width: 240px;
+}
+
+/* Definindo a estilização do elemento com ID "dropDown a"*/
+.dropDown a {
+    float: none;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    height: 65px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid white;
+    border-left: 1px solid #770089;
+    border-right: 1px solid #770089;
+}
+
+#e {
+    border-top: 1px solid white;
+    border-bottom: none;
+}
+
+/* Esta regra define o estilo de fundo de um link dentro do dropdown quando o cursor do mouse é colocado sobre ele (hover). 
+Nesse caso, o fundo é definido como uma cor azul clara (#bedef2)."*/
+#e:hover {
+    background-color: rgb(255, 0, 0);
+}
+
+.dropDown a:hover {
+    background-color: #6d007d;
+}
+
+/* Esta regra define o estilo de exibição de uma classe "show", que é adicionada à lista suspensa para torná-la visível. 
+A propriedade display define como o elemento deve ser exibido na página, e block significa que o elemento deve ser exibido como um bloco, ocupando toda a largura disponível. 
+Quando a classe "show" é adicionada ao dropdown, ele se torna visível na página, já que sua propriedade display é definida como block.*/
+.show {
+    display: block;
+}
+
+.teste{
+    background-color: #dccce0;
+    border-radius: 10px;
+}
+
+.avatar{
+    display: flex;
+}
+
+.botao{
+    background-color: #770089;
+    color:#ffffff;
+    border-radius: 15px;
+    border: 3px solid #ffffff;
+    width: 141px;
+    font-size: 12px;
+}
+
+.botao:hover{
+    background-color: #6600ff;
+    color:#ffffff;
+    border: 3px solid #ffffff;
+}
+
+.editar{
+    background-color: #ffffff !important;
+    color: #770089 !important;
+    border: 3px solid #ffffff;
+    width: 40px !important;
+    height: 43px !important;
+    font-size: 18px !important;
+}
+
+.editar:hover{
+    background-color: #770089 !important;
+    color: #ffffff !important;
+}
+
+.bg-secondary-soft {
+    background-color: #ededed !important;
+}
+.rounded {
+    border-radius: 10px !important;
+}
+.py-5 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+.px-4 {
+    padding-right: 1.5rem !important;
+    padding-left: 1.5rem !important;
+}
+
+.rounded-circle {
+    height: 120px;
+    width: 120px;
+    margin: auto;
+    vertical-align: middle;
+    background-color: #770089;
+}
+
+.text-secondary {
+    --bs-text-opacity: 1;
+    color: #ffffff !important;
+    position: absolute;
+    left: 50px !important;
+    top: 50px !important;
+    translate: middle;
+}
+
+.btn-success-soft {
+    color: #28a745;
+    background-color: rgba(40, 167, 69, 0.1);
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #ededed;
+    background-clip: padding-box;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 5px;
+    -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+/* Definindo a estilização do html scrollbar*/
+html ::-webkit-scrollbar {
+    height: 14px;
+}
+
+html ::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background: #770089;
+}
+
+html ::-webkit-scrollbar-track {
+    background: #ededed;
+}

@@ -1,0 +1,351 @@
+/* importando a fonte Montserrat do Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Julee&family=Montserrat:wght@500&display=swap');
+
+/* Colocando a fonte e a cor em toda a tela html*/
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ededed !important
+}
+
+/* Definindo a estilização do elemento com ID "divMenu"*/
+#Cabecalho {
+    background-color: #bedef2;
+}
+
+/* Definindo a altura e largura da logo"*/
+#logo {
+    width: 350px;
+    position: relative;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+/* Definindo a estilização do elemento com ID "divLogoP"*/
+
+#divLogoP {
+    height: 85px;
+    overflow: visible;
+}
+
+/* Definindo a estilização do elemento com ID "divBuscar"*/
+.divBuscar {
+    position: relative;
+    transform: translate(-0%, - 50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Definindo a estilização do elemento com ID "buscar"*/
+.buscar {
+    background-color: #ededed;
+    height: 15px;
+    padding: 15px;
+    border: 2px solid #b25abf;
+    border-radius: 40px;
+    width: 100%;
+}
+
+.buscar:focus {
+    outline: none !important;
+}
+
+.pesquisa {
+    position: absolute;
+    right: 30px;
+    background-color: transparent;
+    cursor: pointer;
+    height: 20px;
+    border: none;
+    color: #000000;
+}
+
+/* Definindo a estilização do elemento com ID "CriarEvento"*/
+.criar {
+    border: solid 3px;
+    border-color: #770089;
+    border-radius: 40px;
+    background-color: #b25abf;
+    text-align: center;
+    height: 33px;
+    width: 170px;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.criar:hover{
+    background-color: #b900d5;
+}
+
+.short-criar {
+    font-size: 14px;
+    width: 34px;
+}
+
+#logo {
+    z-index: 2
+}
+
+.mais{
+    color: #FFF !important;
+}
+
+@media screen and (max-width: 991px) {
+    .short-criar {
+        display: block !important;
+    }
+
+    .criar {
+        display: none;
+    }
+}
+
+/*mediaquery responsividade do header*/
+/* 
+
+
+
+@media screen and (max-width: 965px) {
+
+    .criar {
+        display: block !important;
+    }
+
+    .short-criar {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 615px) {
+    .criar {
+        display: none !important;
+    }
+
+    .short-criar {
+        display: block !important;
+    }
+} */
+
+/* @media screen and (max-width: 965px) {
+
+    .divBuscar {
+        position: absolute;
+        top: 125px;
+        left: 0px;
+        width: 100%;
+        background: #bedef2;
+        padding: 20px;
+    }
+
+    .short-pesquisa {
+        padding: 0px 15px;
+    }
+} */
+/*final mediaquery>*/
+
+/* Definindo a altura, cursor e largura do elemento com ID "login"*/
+#login{
+    cursor: pointer; 
+    height :70px; 
+    /* width:150px; */
+}
+
+/* Definindo a estilização do elemento com a class "btn"*/
+.btn{
+    /* position: absolute;
+    top: 85%;
+    left: 80%; */
+    background-color: transparent;
+    cursor: pointer;
+    height: 33px;
+    /* width: 150px; */
+    border: none;
+    border-radius: 40px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: bold;
+}
+
+.btn:hover{
+    color: #b900d5 !important;
+    transition-duration: all 0.4s;
+}
+
+/* Definindo a estilização do elemento com a class "login"*/
+/* .login{
+    width: 5px;
+    height: 20px;
+    position: absolute;
+    top: 7%;
+    left: 91%;
+    background-color: #bedef2;
+} */
+
+/* Definindo a estilização do elemento com a class "EventosR"*/
+.EventosR{
+    font-weight: bold;
+    font-size: 25px;
+    /* position: absolute;
+    top: 15%;
+    left: 3.8%; */
+}
+
+/* Definindo a estilização do elemento com a class "barraE"*/
+.barraE{
+    margin-top: 20px;
+    background-color: #dccce0;
+    border-radius: 13px;
+    /* width: 1750px; */
+    height: 150px;
+    display: flex;
+    /*justify-content: space-around;*/
+    align-items: center;
+    overflow:auto; 
+}
+
+/* Definindo a estilização do elemento com a class "evento"*/
+.evento{
+    width: 150px;
+    height: 100px;
+    border-radius: 9px;
+    margin-left: 35px;
+    border: solid 2px;
+    border-color: #770089;
+    cursor: pointer;
+}
+
+/*.evento:hover{
+    border: 6px solid #770089;
+    transition-duration: all 0.4s;
+}*/
+
+/* Definindo a estilização do html scrollbar*/
+html ::-webkit-scrollbar {
+    height: 14px;
+}
+
+html ::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background: #770089;
+}
+
+html ::-webkit-scrollbar-track {
+    background: #ededed;
+}
+
+/* Definindo a posição do elemento com a class "Slogan"*/
+/* .Slogan{
+    position: relative;
+    top: 350px;
+} */
+
+/* Definindo a estilização do elemento com ID "slogan"*/
+#slogan{
+    font-weight: bold;
+    font-size: 45px;
+    /* position: absolute;
+    left: 3.8%; */
+    color: #770089;
+}
+
+/* Definindo a estilização do elemento com ID "sobre"*/
+#sobre{
+    /* top: 225px;
+    left: 3.8%;
+    position: absolute; */
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Definindo a estilização do elemento com ID "fotosIniciais"*/
+#fotosIniciais{
+    /* width: 1250px;
+    position: absolute; 
+    top: 41%;
+    left: 30%;
+    height: 350px;*/
+    border-radius: 10px;
+    border: solid 3px;
+    border-color: #770089;
+}
+
+/* Definindo a posição do elemento com class "rodape"*/
+/* .rodape{
+    position: absolute;
+} */
+
+/* Definindo a estilização do elemento com ID "insta"*/
+#insta{
+    /* position: relative;
+    top: 88.1%;
+    left: 3.7%; */
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+#insta:hover{
+    color: #b900d5;
+    transition-duration: all 0.4s;
+}
+
+/* Definindo a estilização do elemento com ID "sobreN"*/
+#sobreN{
+    /* position: relative;
+    top: 88%; */
+    font-size: 20px;
+    /* left: 4%; */
+}
+
+/* Definindo a estilização do elemento com ID "sobreNozes"*/
+#sobreNozes{
+    color: black;
+    font-weight: bold;
+}
+
+#sobreNozes:hover{
+    color: #b25abf;
+    transition-duration: all 0.4s;
+}
+
+/* Definindo a estilização do elemento com ID "from"*/
+#from{
+    width: 150px;
+    height: 80px;
+    /* position: absolute;
+    top: 90%;
+    left: 45%; */
+}
+
+/* Definindo a estilização do elemento com class "store*/
+.store{
+    width: 30px;
+    height: 50px;
+    /* 
+    position: absolute;
+    top: 93%;
+    left: 85.5%;  */
+}
+
+/* Definindo a estilização do elemento com ID "baixar"*/
+#baixar{
+    /* position: absolute;
+    left: 90%; */
+    width: 130px;
+    height: 50px;
+}
+
+/* Definindo a estilização do elemento com ID "app"*/
+#app{
+    /* position: relative;
+    top: 83%; */
+    font-size: 11px;
+    /* left: 78%; */
+    font-weight: bold;
+}
